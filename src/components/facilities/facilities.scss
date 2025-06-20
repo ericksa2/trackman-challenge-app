@@ -1,0 +1,143 @@
+.facilities {
+  width: 100%;
+  flex-direction: column;
+
+  .create-button-row {
+    display: flex;
+    justify-content: flex-end;
+
+    .create-facility-button {
+      font-size: 1.2rem;
+      text-transform: capitalize;
+    }
+  }
+
+  .location-card {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 30%;
+
+    .location-details {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 2;
+      width: 100%;
+
+      .location-details-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        h3 {
+          font-weight: normal;
+        }
+      }
+
+      .location-details-footer {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+
+        Button {
+          font-weight: bold;
+          text-transform: capitalize;
+        }
+
+        .location-address {
+          flex: 1;
+          flex-grow: 1;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}
+
+.facilities-button {
+  height: 2rem;
+  width: 2rem;
+}
+
+.facilities-button-delete {
+  @extend .facilities-button;
+}
+
+.facilities-button-edit {
+  @extend .facilities-button;
+}
+
+.facilities-address {
+  color: #818181;
+}
+
+.facilities-address-pin {
+  padding-right: 5px;
+}
+
+.open-close {
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.facility-open {
+  @extend .open-close;
+  background-color: #ebffee;
+  color: #1eb263;
+}
+
+.facility-closed {
+  @extend .open-close;
+  background-color: #fee8e7;
+  color: #ec2725;
+}
+
+.default-star {
+  opacity: 0.5;
+}
+
+.favorite-star {
+  opacity: 1;
+}
+
+.rs-modal-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.delete-modal-header {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.delete-modal-footer {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+
+  .delete-modal-buttons-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+
+    .button-container {
+      padding-left: 10px;
+      font-weight: bold;
+
+      Button {
+        font-weight: bold;
+        text-transform: capitalize;
+      }
+    }
+  }
+}

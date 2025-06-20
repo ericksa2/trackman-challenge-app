@@ -1,0 +1,15 @@
+.facility-form {
+  padding: 20px;
+  
+  .action-buttons-row {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 16px;
+
+    .action-button {
+      padding: 8px 16px;
+      margin-left: 10px;
+    }
+  }
+}
