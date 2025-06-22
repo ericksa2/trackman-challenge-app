@@ -4,7 +4,22 @@
 
   .create-button-row {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+
+    .advanced-features-label {
+      font-weight: bold;
+      padding-right: 10px;
+    }
+
+    .create-and-search-row {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .search-bar {
+      width: 300px;
+      margin-right: 10px;
+    }
 
     .create-facility-button {
       font-size: 1.2rem;
@@ -140,4 +155,8 @@
       }
     }
   }
+}
+
+.pagination-row {
+  margin-top: 10px;
 }
